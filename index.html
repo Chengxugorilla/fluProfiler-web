@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fluProfiler-web</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>fluProfiler-web</h1>
+
+      <form id="query-form">
+        <label>
+          serumHA
+          <input id="serumHA" name="serumHA" autocomplete="off" />
+        </label>
+        <label>
+          serumNA
+          <input id="serumNA" name="serumNA" autocomplete="off" />
+        </label>
+        <label>
+          virusHA
+          <input id="virusHA" name="virusHA" autocomplete="off" />
+        </label>
+        <label>
+          virusNA
+          <input id="virusNA" name="virusNA" autocomplete="off" />
+        </label>
+        <label>
+          serumPassage
+          <input id="serumPassage" name="serumPassage" autocomplete="off" />
+        </label>
+        <label>
+          virusPassage
+          <input id="virusPassage" name="virusPassage" autocomplete="off" />
+        </label>
+
+        <button type="submit">查询</button>
+      </form>
+
+      <p id="prediction">等待查询</p>
+    </main>
+  </body>
+</html>
