@@ -8,39 +8,67 @@
     <script type="module" src="./app.js"></script>
   </head>
   <body>
+    <header>
+      <strong>fluProfiler-web</strong>
+      <nav>
+        <a href="#home">首页</a>
+        <a href="#fluAgPredictor">fluAgPredictor</a>
+        <a href="#fluVacSelector">fluVacSelector</a>
+        <a href="#fluAgEnhancer">fluAgEnhancer</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>fluProfiler-web</h1>
+      <section id="home">
+        <h1>fluProfiler-web</h1>
+        <p>流感抗原分析工具，当前已开放 fluAgPredictor。</p>
+      </section>
 
-      <form id="query-form">
-        <label>
-          serumHA
-          <input id="serumHA" name="serumHA" autocomplete="off" />
-        </label>
-        <label>
-          serumNA
-          <input id="serumNA" name="serumNA" autocomplete="off" />
-        </label>
-        <label>
-          virusHA
-          <input id="virusHA" name="virusHA" autocomplete="off" />
-        </label>
-        <label>
-          virusNA
-          <input id="virusNA" name="virusNA" autocomplete="off" />
-        </label>
-        <label>
-          serumPassage
-          <input id="serumPassage" name="serumPassage" autocomplete="off" />
-        </label>
-        <label>
-          virusPassage
-          <input id="virusPassage" name="virusPassage" autocomplete="off" />
-        </label>
+      <section id="fluAgPredictor">
+        <h2>fluAgPredictor</h2>
+        <p>输入血清和病毒的 HA、NA 序列及传代类型，查询 prediction 值。</p>
 
-        <button type="submit">查询</button>
-      </form>
+        <form id="query-form">
+          <label>
+            serumHA
+            <input id="serumHA" name="serumHA" autocomplete="off" />
+          </label>
+          <label>
+            serumNA
+            <input id="serumNA" name="serumNA" autocomplete="off" />
+          </label>
+          <label>
+            virusHA
+            <input id="virusHA" name="virusHA" autocomplete="off" />
+          </label>
+          <label>
+            virusNA
+            <input id="virusNA" name="virusNA" autocomplete="off" />
+          </label>
+          <label>
+            serumPassage
+            <input id="serumPassage" name="serumPassage" autocomplete="off" />
+          </label>
+          <label>
+            virusPassage
+            <input id="virusPassage" name="virusPassage" autocomplete="off" />
+          </label>
 
-      <p id="prediction">等待查询</p>
+          <button type="submit">查询</button>
+        </form>
+
+        <p id="prediction">等待查询</p>
+      </section>
+
+      <section id="fluVacSelector">
+        <h2>fluVacSelector</h2>
+        <p>功能开发中。</p>
+      </section>
+
+      <section id="fluAgEnhancer">
+        <h2>fluAgEnhancer</h2>
+        <p>功能开发中。</p>
+      </section>
     </main>
   </body>
 </html>
